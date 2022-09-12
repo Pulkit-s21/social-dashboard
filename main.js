@@ -5,14 +5,6 @@ const label = document.querySelector(".form-check-label");
 const label2 = document.querySelector(".form-check-label2");
 const input = document.querySelector(".form-check-input");
 
-// so that if the switch is on page reload then the text and theme shown are correct
-if(input.checked){
-    label.classList.add("hidden");
-    label2.classList.remove("hidden");
-}else{
-    label.classList.remove("hidden"); 
-    label2.classList.add("hidden");
-}
 input.addEventListener("click",() => {
     label.classList.toggle("hidden");
     label2.classList.toggle("hidden");
